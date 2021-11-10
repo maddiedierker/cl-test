@@ -1,5 +1,3 @@
-import React from "react";
-
-export default function Button({ text }) {
-  return <button>{text}</button>;
-}
+// TODO: Clean up these import/export statements.
+import Button from "./Button";
+export default Button;

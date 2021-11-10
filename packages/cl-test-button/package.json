@@ -1,0 +1,20 @@
+{
+  "name": "@madkas/cl-test-button",
+  "version": "1.0.0",
+  "description": "Button component",
+  "author": "Maddie Kasula",
+  "license": "MIT",
+  "main": "src/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  }
+}

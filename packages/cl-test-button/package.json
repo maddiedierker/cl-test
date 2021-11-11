@@ -4,7 +4,7 @@
   "description": "Button component",
   "author": "Maddie Kasula",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "dist/main.js",
   "publishConfig": {
     "access": "public"
   },

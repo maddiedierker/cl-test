@@ -1,6 +1,6 @@
 {
   "name": "cl-test",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Testing ground for the Code.org Component Library",
   "main": "index.js",
   "scripts": {

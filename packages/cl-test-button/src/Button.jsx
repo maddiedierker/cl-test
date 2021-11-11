@@ -1,5 +1,10 @@
 import React from "react";
+import Text from "@madkas/cl-test-text";
 
 export default function Button({ text }) {
-  return <button>{text}</button>;
+  return (
+    <button>
+      <Text>{text}</Text>
+    </button>
+  );
 }

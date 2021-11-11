@@ -1,4 +1,7 @@
 module.exports = {
+  output: {
+    libraryTarget: "commonjs", // TODO: change target
+  },
   module: {
     rules: [
       {

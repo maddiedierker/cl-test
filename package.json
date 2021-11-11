@@ -4,6 +4,7 @@
   "description": "Testing ground for the Code.org Component Library",
   "main": "index.js",
   "scripts": {
+    "build": "lerna run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Maddie Kasula",

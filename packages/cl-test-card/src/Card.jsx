@@ -2,13 +2,13 @@ import React from "react";
 import Button from "@madkas/cl-test-button";
 import Text from "@madkas/cl-test-text";
 
-export default function Card(props) {
+export default function Card({ cardText, buttonText }) {
   return (
     <div style={{ borderColor: "black", padding: 5 }}>
       <Text>
-        <p>card text</p>
+        <p>{cardText}</p>
       </Text>
-      <Button text="card button" />
+      <Button text={buttonText} />
     </div>
   );
 }

@@ -1,0 +1,25 @@
+{
+  "name": "@madkas/cl-test-card",
+  "version": "0.0.0",
+  "description": "Card component",
+  "author": "Maddie Kasula",
+  "license": "MIT",
+  "main": "dist/main.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "webpack --config ../../webpack.config.js",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "react": "^17.0.2"
+  },
+  "dependencies": {
+    "@madkas/cl-test-button": "0.0.4",
+    "@madkas/cl-test-text": "0.0.1"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  }
+}

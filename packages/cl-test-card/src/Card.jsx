@@ -4,9 +4,11 @@ import Text from "@madkas/cl-test-text";
 
 export default function Card({ cardText, buttonText }) {
   return (
-    <div style={{ borderColor: "black", padding: 5 }}>
+    <div
+      style={{ border: "1px solid black", padding: 5, width: "fit-content" }}
+    >
       <Text>
-        <p>{cardText}</p>
+        <div>{cardText}</div>
       </Text>
       <Button text={buttonText} />
     </div>

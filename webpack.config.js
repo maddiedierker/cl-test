@@ -1,4 +1,5 @@
 module.exports = {
+  mode: "production", // TODO: make this configurable
   output: {
     library: {
       type: "commonjs", // TODO: change target

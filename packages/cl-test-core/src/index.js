@@ -1,3 +1,3 @@
-export * from "@madkas/cl-test-button";
-export * from "@madkas/cl-test-card";
-export * from "@madkas/cl-test-text";
+export { default as Button } from "@madkas/cl-test-button";
+export { default as Card } from "@madkas/cl-test-card";
+export { default as Text } from "@madkas/cl-test-text";

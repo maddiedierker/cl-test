@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna run build",
-    "publish": "lerna publish",
+    "publish": "npm run build && lerna publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Maddie Kasula",

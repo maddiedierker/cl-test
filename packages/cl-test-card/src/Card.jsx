@@ -10,7 +10,7 @@ export default function Card({ cardText, buttonText }) {
       <Text>
         <div>{cardText}</div>
       </Text>
-      <Button text={buttonText} />
+      <Button onClick={() => console.log("clicked card!")} text={buttonText} />
     </div>
   );
 }

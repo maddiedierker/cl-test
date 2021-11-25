@@ -2,7 +2,11 @@ import React from "react";
 import Text from "@madkas/cl-test-text";
 
 export default function Button({ text, onClick }) {
-  // Purposefully don't guard against falsy onClick prop for testing
+  // Throw an error if we don't receive an onClick
+  if (!onClick) {
+    throw new Error("onClick is required now");
+  }
+
   return (
     <button onClick={onClick}>
       <Text>{text}</Text>

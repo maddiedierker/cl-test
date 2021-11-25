@@ -1,6 +1,6 @@
 {
   "name": "@madkas/cl-test-core",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "All components",
   "author": "Maddie Kasula",
   "license": "MIT",
@@ -16,8 +16,8 @@
     "react": "^17.0.2"
   },
   "dependencies": {
-    "@madkas/cl-test-button": "^1.0.6",
-    "@madkas/cl-test-card": "^1.0.9",
+    "@madkas/cl-test-button": "^1.0.7",
+    "@madkas/cl-test-card": "^1.0.10",
     "@madkas/cl-test-text": "^1.0.5"
   },
   "peerDependencies": {

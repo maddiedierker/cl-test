@@ -6,7 +6,9 @@
   "scripts": {
     "build": "lerna run build",
     "publish": "npm run build && lerna publish",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Maddie Kasula",
   "license": "MIT",
@@ -15,10 +17,19 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
+    "@storybook/addon-actions": "^6.4.1",
+    "@storybook/addon-essentials": "^6.4.1",
+    "@storybook/addon-links": "^6.4.1",
+    "@storybook/builder-webpack5": "^6.4.1",
+    "@storybook/manager-webpack5": "^6.4.1",
+    "@storybook/react": "^6.4.1",
     "babel-loader": "^8.2.3",
     "lerna": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "webpack": "^5.63.0",
     "webpack-cli": "^4.9.1",
     "webpack-node-externals": "^3.0.0"
-  }
+  },
+  "dependencies": {}
 }

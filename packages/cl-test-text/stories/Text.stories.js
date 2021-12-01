@@ -11,15 +11,19 @@ export default {
 };
 
 //👇 We create a “template” of how args map to rendering
-const Template = (args) => <Text {...args}>{args.children}</Text>;
+const Template = (args) => <Text {...args} />;
 
 //👇 Each story then reuses that template
 export const Primary = Template.bind({});
 Primary.args = {
-  children: "hi",
+  theme: "default",
+  element: "span",
+  text: "im a span",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  children: <p>p tag</p>,
+  theme: "default",
+  element: "p",
+  text: "im a p tag",
 };

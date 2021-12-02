@@ -1,6 +1,6 @@
 {
   "name": "@madkas/cl-test-text",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Text component",
   "author": "Madelyn Kasula",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@madkas/cl-test-ui": "^1.0.0"
+    "@madkas/cl-test-ui": "^1.0.1"
   },
   "devDependencies": {
     "react": "^17.0.2"

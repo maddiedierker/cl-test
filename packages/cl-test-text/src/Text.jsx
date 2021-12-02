@@ -1,11 +1,7 @@
 import React from "react";
-import { theme as themes } from "@madkas/cl-test-ui";
+import style from "./text.module.scss";
 
-export default function Text({ theme, element, text }) {
+export default function Text({ element, text }) {
   const Element = element || "span";
-  const style = {
-    backgroundColor: (themes[theme] || {}).primaryBgColor,
-    color: (themes[theme] || {}).primaryFontColor,
-  };
-  return <Element style={style}>{text}</Element>;
+  return <Element className={style.btn}>{text}</Element>;
 }

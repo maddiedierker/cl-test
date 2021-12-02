@@ -19,10 +19,27 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.scss$/i,
+        use: [
+          "style-loader", // Creates `style` nodes from JS strings
+          // Translates CSS into CommonJS
+          // TODO: this is shared with storybook
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                auto: true,
+              },
+            },
+          },
+          "sass-loader", // Compiles Sass to CSS
+        ],
+      },
     ],
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx"],
+    extensions: ["*", ".js", ".jsx", ".scss"],
   },
   // below needed to exclude node_modules from packages' dist/
   target: "node",

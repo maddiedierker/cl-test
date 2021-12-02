@@ -16,14 +16,12 @@ const Template = (args) => <Text {...args} />;
 //👇 Each story then reuses that template
 export const Primary = Template.bind({});
 Primary.args = {
-  theme: "default",
   element: "span",
   text: "im a span",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  theme: "default",
   element: "p",
   text: "im a p tag",
 };

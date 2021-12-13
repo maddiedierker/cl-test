@@ -16,7 +16,8 @@
     "react": "^17.0.2"
   },
   "dependencies": {
-    "@madkas/cl-test-text": "^1.0.8"
+    "@madkas/cl-test-text": "^1.0.8",
+    "@madkas/cl-test-ui": "^1.0.1"
   },
   "peerDependencies": {
     "react": "16.x"

@@ -1,0 +1,9 @@
+.button {
+  // Do we actually want to revert all? Setting everything back to browser default seems best.
+  all: revert;
+
+  // !important required because of application.scss
+  &:active {
+    border: revert !important;
+  }
+}

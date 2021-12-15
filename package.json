@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=development lerna run build",
+    "build:prod": "NODE_ENV=production lerna run build",
     "publish": "lerna publish",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",

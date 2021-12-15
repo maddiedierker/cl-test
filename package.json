@@ -8,7 +8,7 @@
     "build:prod": "NODE_ENV=production lerna run build",
     "preversion": "npm run build:prod",
     "publish": "lerna publish",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o ./docs/"
   },
@@ -25,17 +25,28 @@
     "@storybook/builder-webpack5": "^6.4.1",
     "@storybook/manager-webpack5": "^6.4.1",
     "@storybook/react": "^6.4.1",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "babel-jest": "^27.4.5",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
+    "jest": "^27.4.5",
     "lerna": "^4.0.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
     "sass-loader": "^12.3.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.63.0",
     "webpack-cli": "^4.9.1",
     "webpack-node-externals": "^3.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      "\\.scss$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
 }

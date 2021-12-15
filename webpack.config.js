@@ -1,7 +1,7 @@
 const nodeExternals = require("webpack-node-externals");
 
 module.exports = {
-  mode: "production", // TODO: make this configurable
+  mode: process.env.NODE_ENV,
   output: {
     library: {
       type: "commonjs", // TODO: change target

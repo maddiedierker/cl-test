@@ -8,7 +8,7 @@
     "publish": "lerna publish",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o ./docs/"
   },
   "author": "Maddie Kasula",
   "license": "MIT",

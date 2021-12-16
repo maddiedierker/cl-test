@@ -8,7 +8,7 @@
     "build:prod": "NODE_ENV=production lerna run build",
     "preversion": "npm run build:prod",
     "publish": "lerna publish",
-    "test": "jest",
+    "test": "npm run build && jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o ./docs/"
   },

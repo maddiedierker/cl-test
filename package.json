@@ -6,9 +6,10 @@
   "scripts": {
     "build": "NODE_ENV=development lerna run build",
     "build:prod": "NODE_ENV=production lerna run build",
+    "bootstrap": "lerna bootstrap",
     "preversion": "npm run build:prod",
     "publish": "lerna publish",
-    "test": "npm run build && jest",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o ./docs/"
   },

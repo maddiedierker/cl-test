@@ -1,6 +1,6 @@
 {
   "name": "@madkas/cl-test-button",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Button component",
   "author": "Maddie Kasula",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "react": "^17.0.2"
   },
   "dependencies": {
-    "@madkas/cl-test-text": "^1.0.11",
+    "@madkas/cl-test-text": "^1.0.12",
     "@madkas/cl-test-ui": "^1.0.1"
   },
   "peerDependencies": {

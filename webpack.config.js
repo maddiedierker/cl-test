@@ -3,9 +3,7 @@ const nodeExternals = require("webpack-node-externals");
 module.exports = {
   mode: process.env.NODE_ENV,
   output: {
-    library: {
-      type: "commonjs", // TODO: change target
-    },
+    libraryTarget: "umd",
   },
   module: {
     rules: [

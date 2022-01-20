@@ -1,6 +1,6 @@
 {
   "name": "@madkas/cl-test-card",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "Card component",
   "author": "Maddie Kasula",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "react": "^17.0.2"
   },
   "dependencies": {
-    "@madkas/cl-test-button": "^1.2.0",
+    "@madkas/cl-test-button": "^1.2.1",
     "@madkas/cl-test-text": "0.0.1"
   },
   "peerDependencies": {

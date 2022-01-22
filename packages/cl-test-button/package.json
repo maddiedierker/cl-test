@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "@madkas/cl-test-text": "^1.1.0",
-    "@madkas/cl-test-ui": "^1.0.1"
+    "@madkas/cl-test-ui": "^1.0.1",
+    "@dsco_/link": "file:/Users/madelynkasula/src/cdo/dsco_/packages/link/dsco_-link-0.0.0.tgz"
   },
   "peerDependencies": {
     "react": "16.x"

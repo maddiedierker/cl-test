@@ -1,3 +1,4 @@
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const nodeExternals = require("webpack-node-externals");
 
 module.exports = {
@@ -5,6 +6,7 @@ module.exports = {
   output: {
     libraryTarget: "umd",
   },
+  plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
       {
@@ -20,14 +22,15 @@ module.exports = {
       {
         test: /\.scss$/i,
         use: [
-          "style-loader", // Creates `style` nodes from JS strings
-          // Translates CSS into CommonJS
-          // TODO: this is shared with storybook
+          MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
+              importLoaders: 2,
+              esModule: true,
               modules: {
-                auto: true,
+                namedExport: true,
+                localIdentName: "dsco-[name]-[local]",
               },
             },
           },
